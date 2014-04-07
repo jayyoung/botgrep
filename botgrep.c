@@ -38,6 +38,11 @@ int main() {
 		sleep(rand()%12);
 
 	for(int i = 0; i < complexity_of_botgrep; i++) {
+
+			for(int k = 0; k < i; k++) {
+				std::cout << "\t";
+			}
+
 			std::cout << "Grepping..." << std::endl;
 			sleep(rand()%3);
 	}

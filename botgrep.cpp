@@ -28,14 +28,14 @@ int main() {
 		sleep(rand()%12);
 
 while(complexity_of_botgrep > 0) {
-	for(int i = 0; i < complexity_of_botgrep; i++) {
+	for(int i = 0; i < complexity_of_botgrep*2; i++) {
 				for(int k = 0; k < i; k++) {
 					std::cout << "\t";
 				}
 			std::cout << "Grepping..." << std::endl;
 			usleep(55000);
 	}
-	for(int i = complexity_of_botgrep; i >= 0; i--) {
+	for(int i = complexity_of_botgrep*2; i >= 0; i--) {
 				for(int k = 0; k < i; k++) {
 					std::cout << "\t";
 				}

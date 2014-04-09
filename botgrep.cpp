@@ -3,6 +3,9 @@
 #include <time.h>
 #include <stdlib.h>
 #include <iostream>
+#include <ostream>
+#include <unistd.h>
+
 
 int main() {
 
@@ -10,44 +13,39 @@ int main() {
 	int success_of_botgrep = 0;
 	time_t* JOE_FINISH_PHD_DATE = NULL;
 
-	printf("--- preparing to grep bots ---\n");
+	std::cout << "--- preparing to grep bots ---\n";
 	srand(time(JOE_FINISH_PHD_DATE));
-
-	sleep(rand()%3);
-
 		sleep(rand()%3);
-
-		printf("*** Calculating graph-matching matrix...\n");
-
+		std::cout << "*** Calculating graph-matching matrix...\n";
 		sleep(rand()%4);
-
-		printf("*** Determining machine learning paradigm\n");
-
+		std::cout << "*** Determining machine learning paradigm\n";
 		sleep(rand()%9);
-
-		printf("*** Applying principle components analysis\n");
-
+		std::cout << "*** Applying principle components analysis\n";
 		sleep(rand()%8);
-
-		printf("*** Evaluating model on itself\n");
-
+		std::cout << "*** Evaluating model on itself\n";
 		sleep(rand()%6);
-
-		printf("*** Improving random walks...\n");
-
+		std::cout << "*** Improving random walks...\n";
 		sleep(rand()%12);
 
+while(complexity_of_botgrep > 0) {
 	for(int i = 0; i < complexity_of_botgrep; i++) {
-
-			for(int k = 0; k < i; k++) {
-				std::cout << "\t";
-			}
-
+				for(int k = 0; k < i; k++) {
+					std::cout << "\t";
+				}
 			std::cout << "Grepping..." << std::endl;
-			sleep(rand()%3);
+			usleep(55000);
 	}
+	for(int i = complexity_of_botgrep; i >= 0; i--) {
+				for(int k = 0; k < i; k++) {
+					std::cout << "\t";
+				}
+			std::cout << "Grepping..." << std::endl;
+			usleep(55000);
+	}
+	complexity_of_botgrep--;
+}
 
-	printf("Bots successfully grepped: %d\n",success_of_botgrep );
+	std::cout << "Bots successfully grepped: " << success_of_botgrep << std::endl;
 
 
 
